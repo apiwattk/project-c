@@ -3,7 +3,7 @@
  <title>Convert Temperature</title> 
  </head> 
  <body> 
- <h2>Temperature Conversion</h2> 
+ <h2>Temperature Conversion new</h2> 
  <form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "GET"> 
  Degrees: 
  <input type = "text" name = "degree" size=4> 
