@@ -1,0 +1,21 @@
+<body>
+    <script language="JavaScript">
+        function BTHConverter() {
+            document.converter.EUR.value = document.converter.BTH.value / 36
+        }
+        function EURConverter() {
+	    document.converter.BTH.value = document.converter.EUR.value * 36
+        }
+    </script>
+    <form name="converter">
+        BTH: <input type="text" name="BTH" onChange="BTHConverter()"><br />
+        EUR: <input type="text" name="EUR" onChange="EURConverter()"><br />        
+        <input type="button" value="Convert Currency" />
+    </form>
+</body>
+</html>
+
+
+
+
+
