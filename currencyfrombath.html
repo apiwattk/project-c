@@ -1,0 +1,44 @@
+<html>
+  <title>Currency Converter</title>
+  <body>
+    <script language="JavaScript">
+      function mainConverter() {
+        afghaniConverter();
+        kyatConverter();
+      }
+
+      function afghaniConverter() {
+        document.converter.afghani.value = document.converter.bath.value * 2.42;
+      }
+
+      function kyatConverter() {
+        document.converter.kyat.value = document.converter.bath.value * 43.32;
+      }
+    </script>
+    <form name="converter">
+      <table border="0">
+        <tr>
+          <td>Thai Baht:</td>
+          <td><input type="text" name="bath" onChange="mainConverter()" /></td>
+        </tr>
+        <tr>
+          <td>Afghan Afghani:</td>
+          <td>
+            <input type="text" name="afghani" disabled />
+          </td>
+        </tr>
+        <tr>
+          <td>Myanmar Kyat:</td>
+          <td>
+            <input type="text" name="kyat" disabled />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="button" value="Convert!" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
