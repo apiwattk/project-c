@@ -4,10 +4,15 @@
     <script language="JavaScript">
       function mainConverter() {
         afghaniConverter();
+        kyatConverter();
       }
 
       function afghaniConverter() {
         document.converter.afghani.value = document.converter.bath.value * 2.42;
+      }
+
+      function kyatConverter() {
+        document.converter.kyat.value = document.converter.bath.value * 43.32;
       }
     </script>
     <form name="converter">
@@ -20,6 +25,12 @@
           <td>Afghan Afghani:</td>
           <td>
             <input type="text" name="afghani" disabled />
+          </td>
+        </tr>
+        <tr>
+          <td>Myanmar Kyat:</td>
+          <td>
+            <input type="text" name="kyat" disabled />
           </td>
         </tr>
         <tr>
