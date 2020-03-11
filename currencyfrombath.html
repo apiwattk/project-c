@@ -5,6 +5,7 @@
       function mainConverter() {
         afghaniConverter();
         kyatConverter();
+        UsdConverter();
       }
 
       function afghaniConverter() {
@@ -13,6 +14,10 @@
 
       function kyatConverter() {
         document.converter.kyat.value = document.converter.bath.value * 43.32;
+      }
+
+      function UsdConverter() {
+        document.converter.USD.value = document.converter.bath.value * 0.032;
       }
     </script>
     <form name="converter">
@@ -34,8 +39,17 @@
           </td>
         </tr>
         <tr>
+          <td>Bath to USD is:</td>
+          <td>
+            <input type="text" name="USD" disabled />
+          </td>
+          <td>
+            ดอลลาร์สหรัฐ
+          </td>
+        </tr>
+        <tr>
           <td colspan="2" align="center">
-            <input type="button" value="Convert!" />
+            <input type="button" value="Convert!" /> 
           </td>
         </tr>
       </table>
